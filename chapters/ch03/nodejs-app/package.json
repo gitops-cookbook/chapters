@@ -1,0 +1,19 @@
+{
+  "name": "nodejs-app",
+  "version": "1.0.0",
+  "description": "Example app with Node.JS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gitops-cookbook"
+  },
+  "keywords": [
+    "gitops",
+    "cookbook"
+  ],
+  "author": "Natale Vinto",
+  "license": "GPL-3.0"
+}
