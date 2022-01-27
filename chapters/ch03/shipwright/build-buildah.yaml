@@ -1,0 +1,15 @@
+apiVersion: shipwright.io/v1alpha1
+kind: Build
+metadata:
+  name: buildpack-nodejs-build
+spec:
+  source:
+    url: https://github.com/shipwright-io/sample-nodejs
+    contextDir: source-build
+  strategy:
+    name: buildah
+    kind: ClusterBuildStrategy
+  output:
+    image: quay.io/gitops-cookbook/sample-nodejs:latest
+    credentials:
+      name: push-secret
